@@ -47,8 +47,8 @@ Publication:
   date:      May 2018
   number:    3
 Repository:
-  article:   "https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018/article"
-  code:      "https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018/code"
+  article:   "https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018"
+  code:      "https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018"
   data:
   notebook:
 Reproduction:
