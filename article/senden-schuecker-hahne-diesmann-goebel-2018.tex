@@ -115,8 +115,8 @@
               \sffamily \ReScience~$\vert$
               \href{http://rescience.github.io}{rescience.github.io}
               \hypersetup{urlcolor=blue}}
-\fancyfoot[C]{\sffamily \thepage}
-\fancyfoot[R]{\sffamily Month 2018 $\vert$
+\fancyfoot[C]{\sffamily 3 - \thepage}
+\fancyfoot[R]{\sffamily May 2018 $\vert$
                         Volume \textbf{1} $\vert$
                         Issue \textbf{1}}
 \pagestyle{fancy}
@@ -192,15 +192,15 @@ Sciences (KNAW), 1105BA Amsterdam, The Netherlands}
   \sffamily\small
   %\vspace{2mm}
   {\bfseries Editor}\\
-  Name Surname\\
+  Tiziano Zito\\
 
   {\bfseries Reviewers}\\
-        Name Surname\\
-        Name Surname\\
+        Andrew Davison\\
+        Georgios Is. Detorakis\\
   
-  {\bfseries Received}  Month, Day, 2018\\
-  {\bfseries Accepted}  Month, Day, 2018\\
-  {\bfseries Published} Month, Day, 2018\\
+  {\bfseries Received}  February, 13, 2018\\
+  {\bfseries Accepted}  May, 4, 2018\\
+  {\bfseries Published} May, 4, 2018\\
 
   {\bfseries Licence}   \href{http://creativecommons.org/licenses/by/4.0/}{CC-BY}
 
@@ -217,12 +217,12 @@ Sciences (KNAW), 1105BA Amsterdam, The Netherlands}
     \vspace{-1mm}
   \begin{repobox}
     \bfseries\normalsize
-      \href{http://github.com/rescience/rescience-submission/article}{\faGithubAlt~Article repository}
+      \href{https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018}{\faGithubAlt~Article repository}
   \end{repobox}
       \vspace{-1mm}
   \begin{repobox}
     \bfseries\normalsize
-      \href{http://github.com/rescience/rescience-submission/code}{\faGithubAlt~Code repository}
+      \href{https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018}{\faGithubAlt~Code repository}
   \end{repobox}
         \hypersetup{urlcolor=blue}
 }
@@ -239,7 +239,8 @@ formation}, G. Gancarz, S. Grossberg, Neural Networks, 1159-1174, 1998
 \end{rebox}
 
 
-\section{Introduction}\label{introduction}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
 In 2013 the European Commission launched the Human Brain Project
 (\href{https://www.humanbrainproject.eu/en/}{HBP}) tasked to build a
@@ -268,7 +269,8 @@ for legibility with both model and analysis scripts being implemented
 using Python 2.7.12. However, the code is compatible with Python 3 as
 well (tested with version 3.5.2).
 
-\section{Methods}\label{methods}
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
 
 The SG model described by Gancarz \& Grossberg \autocite{Gancarz1998}
 consists of a horizontal and a vertical component each with two
@@ -285,7 +287,8 @@ that subscripts \(\mathrm{u}\), \(\mathrm{d}\), \(\mathrm{l}\) and
 \(\mathrm{r}\) indicate whether a neuron controls upward, downward,
 leftward or rightward saccade direction, respectively.
 
-\subsubsection{Long-lead burst neurons}\label{long-lead-burst-neurons}
+\hypertarget{long-lead-burst-neurons}{%
+\subsubsection{Long-lead burst neurons}\label{long-lead-burst-neurons}}
 
 Each long-lead burst neuron (\(L\)) receives excitatory external input
 \(I\) and inhibitory feedback from the ipsilateral IBNs (\(B\))
@@ -297,7 +300,9 @@ Each long-lead burst neuron (\(L\)) receives excitatory external input
 \end{array}
 \label{eq:llbn}\end{equation}
 
-\subsubsection{Excitatory burst neurons}\label{excitatory-burst-neurons}
+\hypertarget{excitatory-burst-neurons}{%
+\subsubsection{Excitatory burst
+neurons}\label{excitatory-burst-neurons}}
 
 Each excitatory burst neuron (\(E\)) receives excitatory input from the
 ipsilateral LLBN, a constant arousal signal equal to \(1\), and
@@ -316,7 +321,9 @@ inhibitory input from the contralateral LLBN and the omnipause neuron
 g(x) = \frac{x^4}{0.1^4+x^4} \textrm{.}
 \label{eq:gain}\end{equation}
 
-\subsubsection{Inhibitory burst neurons}\label{inhibitory-burst-neurons}
+\hypertarget{inhibitory-burst-neurons}{%
+\subsubsection{Inhibitory burst
+neurons}\label{inhibitory-burst-neurons}}
 
 Each inhibitory burst neuron (\(B\)) receives excitatory input from the
 ipsilateral EBN
@@ -328,7 +335,8 @@ ipsilateral EBN
 \end{array}
 \label{eq:ibn}\end{equation}
 
-\subsubsection{Omnipause neuron}\label{omnipause-neuron}
+\hypertarget{omnipause-neuron}{%
+\subsubsection{Omnipause neuron}\label{omnipause-neuron}}
 
 The omnipause neuron (\(P\)) receives inhibitory input from all LLBNs
 
@@ -337,7 +345,8 @@ The omnipause neuron (\(P\)) receives inhibitory input from all LLBNs
 \label{eq:opn}\end{equation} where \(J\) represents external electrical
 stimulation and \(g(\cdot)\) is again given by equation \ref{eq:gain}.
 
-\subsubsection{Tonic neurons}\label{tonic-neurons}
+\hypertarget{tonic-neurons}{%
+\subsubsection{Tonic neurons}\label{tonic-neurons}}
 
 Each tonic neuron (\(T\)) receives excitatory input from the ipsilateral
 EBN and inhibitory input from the contralateral EBN
@@ -351,7 +360,8 @@ EBN and inhibitory input from the contralateral EBN
 depends on the activity of the right TN; i.e.
 \(\theta = 260(T_\mathrm{r}-0.5)\).
 
-\subsubsection{Superior colliculus}\label{superior-colliculus}
+\hypertarget{superior-colliculus}{%
+\subsubsection{Superior colliculus}\label{superior-colliculus}}
 
 The superior colliculus (\(A\)) receives electrical stimulation \(F\)
 and evolves according to
@@ -360,8 +370,9 @@ and evolves according to
 \tau \dot A =-A+F \textrm{.}
 \label{eq:sc}\end{equation}
 
+\hypertarget{sc-input-to-the-saccade-generator}{%
 \subsubsection{SC input to the saccade
-generator}\label{sc-input-to-the-saccade-generator}
+generator}\label{sc-input-to-the-saccade-generator}}
 
 For a range of simulations, external input to the saccade generator is
 obtained by applying a nonlinearity \(f(\cdot)\) given by
@@ -409,7 +420,8 @@ original publication, any activity is bounded from below at zero.
 Finally, we always simulate the full model; i.e.~both its horizontal and
 vertical components even if input is applied only to one of the two.
 
-\section{Results}\label{results}
+\hypertarget{results}{%
+\section{Results}\label{results}}
 
 All simulations of the original publication are repeated. Our results
 accord very well with those reported by Gancarz \& Grossberg
@@ -429,9 +441,9 @@ produces a small burst at the end of a saccade. Furthermore, increases
 in activity of the left TN are mirrored by decreases in the right.
 Finally, OPN activity drops to zero during production of a saccade.
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.75000\textwidth,height=0.45000\textwidth]{figures/fig1.eps}
+\includegraphics[height=0.5\textheight,keepaspectratio]{figures/fig1.eps}
 \caption{\textbf{Activity profiles in the left (A) and right (B) SG.}
 All activities are in response to constant input (\(\mathrm{I=1}\))
 applied to the left LLBN for \(265\,\mathrm{ms}\).\label{fig:fig_1}}
@@ -443,9 +455,9 @@ amplitude and duration of activation increase in long-lead and
 excitatory burst neurons. As before, these results accord well with
 those shown in figure 5 of the original publication.
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.75000\textwidth,height=0.36000\textwidth]{figures/fig2.eps}
+\includegraphics[height=0.4\textheight,keepaspectratio]{figures/fig2.eps}
 \caption{\textbf{Activity profiles in LLBN (A) and EBN (B).} Increased
 input strength resulted in larger LLBN and EBN burst size with inputs
 equal to 1 (blue), 1.75 (green), and 2.5 (red) each applied to the left
@@ -466,9 +478,9 @@ and purple curves, respectively. Given that saccade amplitudes are
 between 10\textdegree~and 15\textdegree, these RMSE values indicate a
 close match between the two implementations.
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.48750\textwidth,height=0.48750\textwidth]{figures/fig3.eps}
+\includegraphics[height=0.4\textheight,keepaspectratio]{figures/fig3.eps}
 \caption{\textbf{Oblique saccades.} Inputs to the right and upward LLBNs
 are \(\mathrm{{I}_{r}=0.67}\) \& \(\mathrm{{I}_{u}=0.08}\) (blue);
 \(\mathrm{{I}_{r}=0.7}\) \& \(\mathrm{{I}_{u}=0.22}\) (green);
@@ -484,9 +496,9 @@ with those reported in the original publication (their figure 7) with
 saccades being of equal length and the smaller component (horizontal)
 being stretched to produce straight oblique saccades.
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.33000\textwidth,height=0.45000\textwidth]{figures/fig4.eps}
+\includegraphics[height=0.35\textheight,keepaspectratio]{figures/fig4.eps}
 \caption{\textbf{Saccades in a staircase.} Eye positions exhibited in a
 saccade staircase simulation. Dense clusters reflect saccade endpoints.
 A total of three saccades are exhibited with subsequent saccades
@@ -496,6 +508,7 @@ right and upward LLBNs are equal to \(\mathrm{{I}_{r}=0.2}\) and
 sampled every \(2\,\mathrm{ms}\).\label{fig:fig_4}}
 \end{figure}
 
+
 In the fifth simulation the average activity of the left EBN is obtained
 for a series of saccades with different directions. Figure
 \ref{fig:fig_5} shows a polar plot of average activity corresponding to
@@ -503,9 +516,7 @@ each saccade. This is the neuron's tuning curve. The tuning curve we
 observe for the left EBN exhibits a cardioid-like shape as in the
 original publication (figure 8).
 
-\pagebreak
-
-\begin{longtable}[c]{@{}lllllllllllllll@{}}
+\begin{longtable}[]{@{}lllllllllllllll@{}}
 \caption{Direction specific inputs to SG to produce EBN tuning curve.
 \label{tbl:table_1}}\tabularnewline
 \toprule
@@ -529,9 +540,9 @@ original publication (figure 8).
 \bottomrule
 \end{longtable}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.37500\textwidth,height=0.37500\textwidth]{figures/fig5.eps}
+\includegraphics[height=0.35\textheight,keepaspectratio]{figures/fig5.eps}
 \caption{\textbf{EBN tuning curve.} Tuning curve of the left EBN
 exhibiting a cardioid-like shape. Inputs to the SG producing the
 saccades are given in table \ref{tbl:table_1}. Each of these inputs is
@@ -565,16 +576,20 @@ publication from their figure 9 and calculate the RMSE between these and
 our curves. The RMSE is 1.24\textdegree, \(0.46\,\mathrm{ms}\), and
 \(4.45\,\mathrm{deg/s}\) for saccade amplitude, duration, and peak
 velocity, respectively. Our results accord thus very well with those
-reported in the original publication. This includes the observation that
+reported in the original publication. 
+
+\pagebreak
+
+This includes the observation that
 saccade amplitude and especially saccade duration are largest for a
 stimulation intensity of 1.2. It is conceivable that this intensity
 marks the point after which the SG starts producing two rather than a
 single saccade with the eye movement at this intensity merging two
 saccades and thus being stretched out.
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.75000\textwidth,height=0.37500\textwidth]{figures/fig6.eps}
+\includegraphics[height=0.35\textheight,keepaspectratio]{figures/fig6.eps}
 \caption{\textbf{Effect of stimulation frequency on saccade amplitude
 (A), duration (B), and velocity (C).} A range of unitless values varying
 between 1 and 2.4 at increments of 0.2, reflecting stimulation at
@@ -583,9 +598,9 @@ SC to LLBN is \(\mathrm{W=2}\) and stimulation duration is
 \(125\,\mathrm{ms}\).\label{fig:fig_6}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.90000\textwidth,height=0.90000\textwidth]{figures/fig7.eps}
+\includegraphics[height=0.8\textheight,keepaspectratio]{figures/fig7.eps}
 \caption{\textbf{Trading saccade velocity for duration.} Duration and
 velocity of a saccade can be traded while keeping amplitude constant. To
 produce a high velicity saccade an input of \(\mathrm{F=3}\) was applied
@@ -599,18 +614,20 @@ manuscript are recreated in an ad-hoc fashion (B), the responses of all
 model neurons matches those in \autocite{Gancarz1998}\label{fig:fig_7}}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}
 \centering
-\includegraphics[width=0.70000\textwidth,height=0.56200\textwidth]{figures/fig8.eps}
+\includegraphics[height=0.6\textheight,keepaspectratio]{figures/fig8.eps}
 \caption{\textbf{Smooth staircase eye movements.} Activity profiles of
 SG neurons accompanying smooth eyes movement as a result of strong
 (\(\mathrm{I=3}\)) sustained (\(300\,\mathrm{ms}\))
 input.\label{fig:fig_8}}
 \end{figure}
 
-\begin{figure}[htbp]
+\pagebreak
+
+\begin{figure}
 \centering
-\includegraphics[width=0.46200\textwidth,height=0.60000\textwidth]{figures/fig9.eps}
+\includegraphics[height=0.6\textheight,keepaspectratio]{figures/fig9.eps}
 \caption{\textbf{Interrupted saccade resulting from OPN stimulation.}
 OPN stimulation interrupts the saccade, which remains accurate
 nonetheless. An input of (\(\mathrm{I=0.7}\)) is applied to the LLBN for
@@ -682,7 +699,8 @@ an interruption of the saccade. As is shown in figure \ref{fig:fig_9},
 the saccade remains accurate despite this disruption. This is in
 agreement with results shown in figure 12 of the original publication.
 
-\section{Conclusion}\label{conclusion}
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
 The reproduced results show very good qualitative correspondence with
 those reported by Gancarz and Grossberg \autocite{Gancarz1998} and
@@ -707,16 +725,19 @@ generator with computational models of other components of the
 visuo-motor system (e.g.~salience computation) within a shared
 framework.
 
-\section{Acknowledgments}\label{acknowledgments}
+\hypertarget{acknowledgments}{%
+\section{Acknowledgments}\label{acknowledgments}}
 
 All network simulations carried out with NEST
 (http://www.nest-simulator.org). This research was funded by the
 European Union's Horizon 2020 Research and Innovation Programme under
-Grant Agreements No. 7202070 (HBP SGA1) and 737691 (HBP SGA2).
+Grant Agreements No.~7202070 (HBP SGA1) and 737691 (HBP SGA2).
 
-\section{Appendix}\label{appendix}
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
 
-\subsection{A1 - Rate neurons in NEST}\label{a1---rate-neurons-in-nest}
+\hypertarget{a1---rate-neurons-in-nest}{%
+\subsection{A1 - Rate neurons in NEST}\label{a1---rate-neurons-in-nest}}
 
 For a detailed, comprehensive, treatment of rate-based neuron models in
 NEST see Hahne et al. \autocite{Hahne2017}. Here we provide only a brief
@@ -725,7 +746,8 @@ provided with this publication. In general, rate-based model neurons in
 NEST consist of two components; an abstract neuron class and a gain
 function.
 
-\subsubsection{Neuron class}\label{neuron-class}
+\hypertarget{neuron-class}{%
+\subsubsection{Neuron class}\label{neuron-class}}
 
 Two types of neuron base classes exist in NEST 2.16.0:
 \texttt{rate\_neuron} and\\
@@ -741,7 +763,7 @@ of a Wiener process) can be added to its input or to its output. The
 \ref{tbl:table_2}) and two further properties \texttt{rate} (current
 firing rate) and \texttt{noise} (current noise level).
 
-\begin{longtable}[c]{@{}lll@{}}
+\begin{longtable}[]{@{}lll@{}}
 \caption{\texttt{rate\_neuron} parameters.
 \label{tbl:table_2}}\tabularnewline
 \toprule
@@ -779,7 +801,8 @@ parameters. For its implementation see
 \texttt{rate\_transformer\_node\_impl.h} in
 \texttt{../nest/nest-simulator-master/models}.
 
-\subsubsection{Gain function}\label{gain-function}
+\hypertarget{gain-function}{%
+\subsubsection{Gain function}\label{gain-function}}
 
 Five gain functions exist in NEST 2.16.0: \texttt{lin\_rate},
 \texttt{sigmoid\_rate},\\
