@@ -34,20 +34,21 @@ Address:
 Contact:
   - mario.senden@maastrichtuniversity.nl
 Editor:
-  - Name Surname
+  - Tiziano Zito
 Reviewer:
-  - Name Surname
-  - Name Surname
+  - Andrew Davison
+  - Georgios Is. Detorakis
 Publication:
-  received:  Month,  Day, 2018
-  accepted:  Month, Day, 2018
-  published: Month, Day, 2018
+  received:  February,  13, 2018
+  accepted:  May, 4, 2018
+  published: May, 4, 2018
   volume:    "**1**"
   issue:     "**1**"
-  date:      Month 2018
+  date:      May 2018
+  number:    3
 Repository:
-  article:   "http://github.com/rescience/rescience-submission/article"
-  code:      "http://github.com/rescience/rescience-submission/code"
+  article:   "https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018/article"
+  code:      "https://github.com/ReScience-Archives/Senden-Schuecker-Hahne-Diesmann-Goebel-2018/code"
   data:
   notebook:
 Reproduction:
